@@ -11,6 +11,7 @@ document.getElementById('loan-form').addEventListener('submit', function(e){
 
     e.preventDefault();
 });
+//Clear all fields
 document.getElementById('loan-form').addEventListener('reset', clearFields);
 
 //Calculate Results
@@ -44,7 +45,7 @@ function calculateResults(e){
         //Hide loader
         document.getElementById('loading').style.display = 'none';
     }else{
-        showError('Tarkista luvut!');
+        showError('Tarkista luvut');
     }
 
 }
